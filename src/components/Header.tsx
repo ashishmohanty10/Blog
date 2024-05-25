@@ -22,7 +22,7 @@ const Header = () => {
   const pathName = usePathname();
 
   return (
-    <header className="flex justify-between items-center py-4 px-7 border border-b">
+    <header className="flex justify-between items-center py-4 px-7 ">
       <Link href="/">
         <Image src={Logo} alt="Brand ogo" className="w-[80px]" width={80} />
       </Link>
@@ -34,7 +34,7 @@ const Header = () => {
               <Link
                 href={link.href}
                 className={` ${
-                  pathName === link.href ? "text-zinc-900" : "text-zinc-400"
+                  pathName === link.href ? "text-zinc-100" : "text-zinc-500"
                 }`}
               >
                 {link.label}
